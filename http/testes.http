@@ -1,0 +1,52 @@
+### Variables 
+@apiurl = http://localhost:8080
+//@apiurl = https://go-lotofacil.onrender.com
+//@apiurl=https://petite-vania-macakosoftware-524c0c62.koyeb.app
+
+
+### 
+GET {{apiurl}}/convites/gerar?qtd=70
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzUwMTUwMzYsInN1YiI6MX0.kbP-OVZTaZKg3C1NlM7FuDyRu1NnKxn358nFYQP-tJA
+
+###
+GET {{apiurl}}/convites
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjU1MDM0ODYsInN1YiI6MX0.66g8sSCc1rOmJOyKP7Tn45kOMlxHbmrDtaiUZFb_NYE
+
+###
+GET {{apiurl}}/convites/validar-convite?id=6d8874c4-1f6a-471d-b365-21021c3e6974
+
+###
+POST {{apiurl}}/usuarios/cadastrar
+Content-Type: application/json
+
+{
+   "user_id":"cleiton",
+   "password":"testeteste"   
+}
+
+###
+POST {{apiurl}}/usuarios/autenticar
+Content-Type: application/json
+
+{
+   "user_id":"cleiton",
+   "password":"testeteste"   
+}
+
+###
+GET {{apiurl}}/convites-auth
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjUxMDk0MDgsInN1YiI6MX0.UeJ7HGNnY1_NWI-fJ_6g47L_gBDSYPPH4OtJRjzKLLI
+
+###
+GET {{apiurl}}/participantes
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjU1MDM0ODYsInN1YiI6MX0.66g8sSCc1rOmJOyKP7Tn45kOMlxHbmrDtaiUZFb_NYE
+
+###
+GET {{apiurl}}/jogos/listar-numeros
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjU3MjI4OTMsInN1YiI6MX0.Ykrs1oDZrgQgfXN3wZZbIDn81pviXXEC4yXJRUKfCx8
+Content-Type: application/json
+
+{
+   "quantidade_cartoes": 10,
+   "quantidade_numeros": 17
+}
