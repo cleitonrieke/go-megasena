@@ -27,7 +27,7 @@ func main() {
 	r.HandleFunc("/jogos/listar-numeros", middleware.ValidarJWT(h.ResumoNumerosLotoFacil)).Methods("GET")
 
 	corsOpts := cors.New(cors.Options{
-		AllowedOrigins: []string{"http://localhost:9000", "http://localhost:9001", "https://quasar-mega.onrender.com/"}, //you service is available and allowed for this base url
+		AllowedOrigins: []string{"http://localhost:9000", "http://localhost:9001", "https://quasar-mega-sena.onrender.com/"}, //you service is available and allowed for this base url
 		AllowedMethods: []string{
 			http.MethodGet, //http methods for your app
 			http.MethodPost,
